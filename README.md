@@ -1,6 +1,6 @@
-# T07 Disjoined
+# T07 Advanced Disjoined
 
-Pada tugas terstruktur kali ini anda akan melakukan analisis kebali terhadap studi kasus **Academic Simulator** serta mengembangkan sebuah fitur tambahan.
+Pada Quiz kali kali ini anda akan melakukan analisis kebali terhadap studi kasus **Academic Simulator** serta mengembangkan sebuah fitur tambahan.
 
 ## Rethinking (academic.driver.Driver1, 100pts)
 
