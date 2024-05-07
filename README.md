@@ -29,6 +29,7 @@ Berikut adalah daftar operasi yang diperlukan pada solusi:
 7. Pemberian nilai pada pengambilan mata kuliah (```grading```). Fitur ini telah dikembangkan dan tidak ada perubahan yang perlu dilakukan.
 8. Pemberian nilai remedial pada pengambilan mata kuliah (```remedial```). Fitur ini telah dikembangkan dan tidak ada perubahan yang perlu dilakukan.
 9. Satu fitur tambahan yang perlu dikembangkan adalah menampilkan sejarah pelaksanaan mata kuliah (```course history```).
+10. Sebagai tambahan pada kuis kali ini, anda diminta untuk menambah fitur mencari mahasiswa terbaik (```find the best student```).
 
 ### 1. Adding New Course (Change).
 
@@ -90,6 +91,7 @@ enrollment-grade#12S1101#12S20001#2020/2021#even#AB
 enrollment-grade#12S1101#12S20002#2020/2021#even#A
 enrollment-grade#12S1101#12S20003#2020/2021#even#A
 course-history#12S1101
+find-the-best-student
 ---
 
 ```
