@@ -30,6 +30,7 @@ Berikut adalah daftar operasi yang diperlukan pada solusi:
 8. Pemberian nilai remedial pada pengambilan mata kuliah (```remedial```). Fitur ini telah dikembangkan dan tidak ada perubahan yang perlu dilakukan.
 9. Satu fitur tambahan yang perlu dikembangkan adalah menampilkan sejarah pelaksanaan mata kuliah (```course history```).
 10. Sebagai tambahan pada kuis kali ini, anda diminta untuk menambah fitur mencari mahasiswa terbaik (```find the best student```).
+11. Kemudian, mahasiswa terbaik tersebut tambahkan ke daftar mahasiswa terbaik (```the best students```).
 
 ### 1. Adding New Course (Change).
 
@@ -50,6 +51,18 @@ course-open#<course-code>#<academic-year>#<semester>#<lecturer-list>
 Perlu diperhatikan bahwa pada dosen pengampu ditulis dalam bentuk inisial, dan dapat saja terdiri dari beberapa inisial untuk mata kuliah yang diampu bersama. Inisial dosen yang satu dengan yang lainnya dipisahkan dengan tanda koma (```,```).
 
 Pembukaan mata kuliah (```course opening```) hanya dapat dilakukan bila mata kuliah (```course```) dan dosen (```lecturer```) terkait sudah terlebih dahulu terdaftar di dalam simulator.
+
+### Find the best student ###
+Anda perlu menambkan fitur baru yaitu mencari mahasiswa terbaik berdasarkan performa di semester ganjil dan genap. jika ada terdapat kesamaan diantara mahasiswa, maka yang diambil adalah dengan nim Genap dari semester genap.
+```bash
+find-the-best-student#<academic-year>#<semester>
+```
+
+### Add the Best Student ###
+Setelah mendapatkan nama nama mahasiswa terbaik tersebut, tambahkanlah mereka ke dalam list mahasiswa terbaik.
+```bash
+add-best-student#<best-student>
+```
 
 ### Course History (New).
 
@@ -91,7 +104,9 @@ enrollment-grade#12S1101#12S20001#2020/2021#even#AB
 enrollment-grade#12S1101#12S20002#2020/2021#even#A
 enrollment-grade#12S1101#12S20003#2020/2021#even#A
 course-history#12S1101
-find-the-best-student
+find-the-best-student#2020/2021#odd
+find-the-best-student#2020/2021#even
+add-best-student#best-student
 ---
 
 ```
@@ -125,7 +140,8 @@ find-the-best-student
 12S1101|12S20001|2020/2021|even|AB
 12S1101|12S20002|2020/2021|even|A
 12S1101|12S20003|2020/2021|even|A
-
+12S20002|B/A
+12S20002|B/A
 ```
 
 Silakan untuk menganalisis output di atas untuk menemukan perubahan-perubahan format keluaran dari solusi.
@@ -140,6 +156,7 @@ Presentasikan pekerjaan anda dalam sebuah video. Pada presentasi:
 4. Demonstrasikan pekerjaan anda.
 5. Tunjukkan hasil yang anda peroleh dari GitHub Classroom.
 6. Sebutkan kendala yang dihadapi dalam pengerjaan tugas kali ini.
+7. jabarkan bagaimana anda menganalisa penambahan fitur 10 dan 11 tersebut.
 
 Note: Semakin tajam argumen dan penjabaran anda semakin mudah penilaian dilakukan.
 
